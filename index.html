@@ -70,6 +70,41 @@
     .tab-content.active {
       display: block;
     }
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .buttontryit {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #007b5e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .buttontryit:hover {
+      background-color: #005f47;
+    }
+
   </style>
 </head>
 <body>
@@ -85,11 +120,16 @@
 
   <div id="home" class="tab-content active">
     <h2>🏠 Home</h2>
-    <p>Welcome to the homepage! This is where your main content lives.</p>
+    <h1>Jay Swaminarayan</h1>
+    <p>We want to achieve this motto "ભાષા એ પુલ છે, દિવાલ નહીં — ગુજરાતી શીખો, દુનિયા જોડો!"
+Bhāṣā e pul chhe, divāl nahīṁ — Gujarātī shīkho, duniyā joḍo!
+we are achieveing this very well </p>
    <center><footer><b>SksstB Gujarati Copyright &copy 2023-Present</b></footer></center>
   </div>
 
   <div id="calendar" class="tab-content">
+   
+    
     <h2><i class=""></i>🗓️ Calendar</h2>
     <p>This Page will tell you when holidays are in Gujarati Classes And will Tell you other Info About what celebration's are coming up</p>
 <center><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&title=Sksstb%20Gujarati&src=cnVzaGlsa2VyYWk2QGdtYWlsLmNvbQ&src=MTIxZWI0MTdmYjMxODFmZWE5Yjc1YWVjOTAzZGQwZTk4ZjBjNDQ2NGU3ZWY0YTVjMTA0ODM4MDEzNGFmNTNkNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IudWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039be5&color=%237cb342&color=%230b8043&color=%23b39ddb" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe></center>
@@ -98,7 +138,32 @@
 
   <div id="contact" class="tab-content">
     <h2>📬 Contact</h2>
-    <p>Here’s how people can get in touch with you.</p>
+     <p>Number:########</p>
+    <p>Email:@lordswaminarayan.com</p>
+      <h2>Gujarati School Interest Form</h2>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+    <!-- Replace with your actual email above -->
+
+    <label for="yourName">Your Name:</label>
+    <input type="text" id="yourName" name="Your Name" required>
+
+    <label for="personName">Person's Name:</label>
+    <input type="text" id="personName" name="Person's Name" required>
+
+    <label for="interest">What would you like to do?</label>
+    <select id="interest" name="Interest" required>
+      <option value="">-- Please choose an option --</option>
+      <option value="Teach at Gujarati School">Teach at Gujarati School</option>
+      <option value="Apply Your Child">Apply Your Child</option>
+      <option value="Feedback / Help / Contact">Feedback / Help / Contact</option>
+    </select>
+
+    <label for="additionalInfo">What should we know about them?</label>
+    <textarea id="additionalInfo" name="Additional Info" rows="5" placeholder="Tell us anything important..." required></textarea>
+
+    <button type="submit" class="buttontryit">Submit</button>
+  </form>
+
      <center><footer><b>SksstB Gujarati Copyright &copy 2023-Present</b></footer></center>
   </div>
 
@@ -122,4 +187,5 @@
   </script>
 
 </body>
+
 </html>
