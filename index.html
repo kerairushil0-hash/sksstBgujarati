@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sksst Bolton Gujarati</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" type="image/x-icon" href="mandir-logo (1).png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      padding-top: 100px;
+    }
+
+    .tabs {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: white;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0078d4;
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo i {
+      font-size: 24px;
+    }
+
+    .tab {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #555;
+      transition: color 0.3s;
+    }
+
+    .tab:hover,
+    .tab.active-tab {
+      color: #0078d4;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tabs">
+    <div class="logo">
+      <i class="mandir-logo (1).png"><img width="64" height="60" src="mandir-logo (1).png" alt=""></i>SksstB Gujarati
+    </div>
+    <button class="tab active-tab" data-target="home"><i class="fas fa-home"></i></button>
+    <button class="tab" data-target="calendar"><i class="fas fa-calendar"></i></button>
+    <button class="tab" data-target="contact"><i class="fas fa-envelope"></i></button>
+  </div>
+
+  <div id="home" class="tab-content active">
+    <h2>🏠 Home</h2>
+    <p>Welcome to the homepage! This is where your main content lives.</p>
+   <center><footer><b>SksstB Gujarati Copyright &copy 2023-Present</b></footer></center>
+  </div>
+
+  <div id="calendar" class="tab-content">
+    <h2><i class=""></i>🗓️ Calendar</h2>
+    <p>This Page will tell you when holidays are in Gujarati Classes And will Tell you other Info About what celebration's are coming up</p>
+<center><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&title=Sksstb%20Gujarati&src=cnVzaGlsa2VyYWk2QGdtYWlsLmNvbQ&src=MTIxZWI0MTdmYjMxODFmZWE5Yjc1YWVjOTAzZGQwZTk4ZjBjNDQ2NGU3ZWY0YTVjMTA0ODM4MDEzNGFmNTNkNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IudWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039be5&color=%237cb342&color=%230b8043&color=%23b39ddb" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe></center>
+ <center><footer><b>SksstB Gujarati Copyright &copy 2023-Present</b></footer></center>
+</div>
+
+  <div id="contact" class="tab-content">
+    <h2>📬 Contact</h2>
+    <p>Here’s how people can get in touch with you.</p>
+     <center><footer><b>SksstB Gujarati Copyright &copy 2023-Present</b></footer></center>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('data-target');
+
+        tabs.forEach(t => t.classList.remove('active-tab'));
+        tab.classList.add('active-tab');
+
+        contents.forEach(content => {
+          content.classList.remove('active');
+        });
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
